@@ -76,10 +76,10 @@ function Bartender4:HideBlizzard()
 	hideActionBarFrame(MicroMenu, true)
 
 	-- these events drive visibility, we want the MainMenuBar to remain invisible
-	MainMenuBar:UnregisterEvent("PLAYER_REGEN_ENABLED")
-	MainMenuBar:UnregisterEvent("PLAYER_REGEN_DISABLED")
-	MainMenuBar:UnregisterEvent("ACTIONBAR_SHOWGRID")
-	MainMenuBar:UnregisterEvent("ACTIONBAR_HIDEGRID")
+	-- MainMenuBar:UnregisterEvent("PLAYER_REGEN_ENABLED")
+	-- MainMenuBar:UnregisterEvent("PLAYER_REGEN_DISABLED")
+	-- MainMenuBar:UnregisterEvent("ACTIONBAR_SHOWGRID")
+	-- MainMenuBar:UnregisterEvent("ACTIONBAR_HIDEGRID")
 
 	if C_AddOns.IsAddOnLoaded("Blizzard_NewPlayerExperience") then
 		self:NPE_LoadUI()

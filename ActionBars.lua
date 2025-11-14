@@ -334,7 +334,8 @@ function BT4ActionBars:Create(id, config, bindingmapping)
 		bar:RegisterEvent("PLAYER_TALENT_UPDATE")
 		bar:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
 	end
-	bar:RegisterEvent("LEARNED_SPELL_IN_TAB")
+	-- FIXBETA
+	-- bar:RegisterEvent("LEARNED_SPELL_IN_TAB")
 	bar:RegisterEvent("PLAYER_REGEN_ENABLED")
 
 	self:CreateBarOption(id)
